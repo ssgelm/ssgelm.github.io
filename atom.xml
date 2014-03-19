@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Fire in the Cloud]]></title>
+  <link href="http://ssgelm.github.io/atom.xml" rel="self"/>
+  <link href="http://ssgelm.github.io/"/>
+  <updated>2014-03-18T21:47:15-05:00</updated>
+  <id>http://ssgelm.github.io/</id>
+  <author>
+    <name><![CDATA[Stephen Gelman]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[First Post]]></title>
+    <link href="http://ssgelm.github.io/blog/2014/03/18/first-post/"/>
+    <updated>2014-03-18T21:43:39-05:00</updated>
+    <id>http://ssgelm.github.io/blog/2014/03/18/first-post</id>
+    <content type="html"><![CDATA[<p>This is my first post!  More content coming soon&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>
