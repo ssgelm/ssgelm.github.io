@@ -1,8 +1,8 @@
 $blockquote: $type-border !default;
 $sans: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
-$serif: "PT Serif", Georgia, Times, "Times New Roman", serif !default;
-$mono: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
-$heading-font-family: "PT Serif", "Georgia", "Helvetica Neue", Arial, sans-serif !default;
+$serif: "Arvo", "PT Serif", Georgia, Times, "Times New Roman", serif !default;
+$mono: "Soruce Code Pro", Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace !default;
+$heading-font-family: "PT Sans", "Helvetica Neue", Arial, sans-serif !default;
 $header-title-font-family: $heading-font-family !default;
 $header-subtitle-font-family: $heading-font-family !default;
 
@@ -20,7 +20,7 @@ body > header h1 {
   font-family: $header-title-font-family;
   font-weight: normal;
   line-height: 1.2em;
-  margin-bottom: 0.6667em;
+  // margin-bottom: 0.6667em;
 }
 body > header h2 {
   font-family: $header-subtitle-font-family;
@@ -34,9 +34,6 @@ body {
 h1 {
   font-size: 2.2em;
   line-height: 1.2em;
-  //Added by lijinma
-  color: #329628;
-  //end
 }
 
 @media only screen and (min-width: 992px) {
@@ -66,10 +63,7 @@ h6, section h5, section section h4, section section section h3 {
   font-size: .8em;
 }
 
-//p, article blockquote, ul, ol { margin-bottom: 1.5em; }
-//Added by lijinma
-p, article blockquote, ul, ol { margin-bottom: .8em; }
-//end
+p, article blockquote, ul, ol { margin-bottom: 1.5em; }
 
 ul { list-style-type: disc;
   ul { list-style-type: circle; margin-bottom: 0px;
@@ -114,20 +108,13 @@ small { font-size: .8em; }
 big { font-size: 1.2em; }
 
 article blockquote {
-  // $bq-margin: 1.2em;
-  // font-style: italic;
-  // position: relative;
-  // font-size: 1.2em;
-  // line-height: 1.5em;
-  // padding-left: 1em;
-  // border-left: 4px solid rgba($text-color-light, .5);
-  // Added by lijinma
-  padding: 15px 20px;
-  margin: 0 0 15px 0;
-  font-size: 14px;
-  border-left: 5px solid #ddd;
-  background-color: rgba(102, 128, 153, 0.05);
-  // end
+  $bq-margin: 1.2em;
+  font-style: italic;
+  position: relative;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  padding-left: 1em;
+  border-left: 4px solid rgba($text-color-light, .5);
   cite {
     font-style: italic;
     a { color: $text-color-light !important; word-wrap: break-word; }
@@ -138,7 +125,6 @@ article blockquote {
     border-left-width: 4px;
   }
 }
-
 
 .pullquote-right:before,
 .pullquote-left:before {

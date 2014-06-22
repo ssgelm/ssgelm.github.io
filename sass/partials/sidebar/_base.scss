@@ -22,8 +22,8 @@ aside.sidebar {
     }
   }
   img {
-    @extend .flex-content;
-    @extend .basic-alignment;
+    @extend .flex-content !optional;
+    @extend .basic-alignment !optional;
     @include shadow-box($border: #fff .3em solid);
   }
   ul {
@@ -75,7 +75,7 @@ aside.sidebar {
       font-size: 1.2em;
       line-height: 1.1em;
       padding-bottom: .15em;
-      @include border-bottom-right-radius(.3em);
+      border-bottom-right-radius: .3em;
       text-align: center;
       background: $main-bg $noise-bg;
       border-bottom: 1px solid $sidebar-border;

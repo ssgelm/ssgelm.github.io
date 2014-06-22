@@ -15,7 +15,7 @@ $solar-blue:      #268bd2 !default;
 $solar-cyan:      #2aa198 !default;
 $solar-green:     #859900 !default;
 
-$solarized: dark !default;
+$solarized: github !default;
 
 @if $solarized == light {
 
@@ -36,6 +36,12 @@ $solarized: dark !default;
   $base1:   $_base01;
   $base2:   $_base02;
   $base3:   $_base03;
+}
+
+@if $solarized == github {
+  $base03:          #fbfbfb; //darkest blue, background color
+  $base02:          #fefefe; //dark blue, line-numbers color
+  $base01:          #93a1a1; //darkest gray, line-numbers font color
 }
 
 /* non highlighted code colors */
