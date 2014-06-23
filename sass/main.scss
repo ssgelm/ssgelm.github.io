@@ -83,7 +83,8 @@ header {
     font-family: $blog-title-font;
     font-size: $blog-title-font-size;
     text-transform: $blog-title-text-transform;
-    color: #222;
+    // color: #222;
+    color: #CC2900;
     &:hover {
       color: $main-color;
     }

@@ -8,40 +8,41 @@
 		<meta content="width=device-width,initial-scale=1" name="viewport">
 		<meta content="{{ site.description }}" name="description">
 		<meta content="{{ site.title }}" name="author">
-		
+
 		<title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
-		
+
 		<!-- Styles -->
 		<link href="{{ root_url }}/stylesheets/main.css" rel="stylesheet">
-		
+
 		<!-- Google webfonts -->
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
 		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Cousine">
-		
+
 		<link href="http://feeds.feedburner.com/turkeltaub" rel="alternate" title="{{ site.title }}" type="application/rss+xml" />
-		
+
 	</head>
 	<body>
-	
+
 		<div class="wrap">
-	
+
 			<header>
                 <a href="{{ site.root }}"><div class="title">{{ site.title }}</div></a>
-				
+
 				<div class="navi">
 					<ul>
 						<li><a href="{{ root_url }}/">Blog</a></li>
 						<li><a href="{{ root_url }}/blog/archives">Archives</a></li>
+						<li><a href="{{ root_url }}/atom.xml">RSS</a></li>
 					</ul>
 				</div> <!-- // .navi -->
 			</header>
-		
+
 				{{ content | expand_urls: root_url }}
-		
+
 			<footer>
 				{% include footer.html %}
 			</footer>
-			
+
 		</div> <!-- // .wrap -->
 
         <!-- jQuery and plugins -->
